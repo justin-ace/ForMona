@@ -1,0 +1,270 @@
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down-bounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    60%{
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0.1, 0.1);
+    }
+
+    35% {
+        transform: scale(1, 1);
+    }
+
+    70%{
+        transform: scale(0.8, 0.8);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* our pallete section */
+
+@keyframes ourpallete-imagepallete-animation {
+    from {
+        opacity: 0;
+        width: 1%;
+    }
+
+    to {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+.ourpallete-animatable-imagepallete {
+    flex-direction: row;
+}
+
+.ourpallete-animatable-imagepallete-animation {
+    animation-name: ourpallete-imagepallete-animation;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+}
+
+.ourpallete-animatable-palleteimage {
+    flex-basis: 1px;
+    flex-shrink: 1;
+
+    transition-property: flex-grow;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.ourpallete-animatable-palleteimage-collapsed {
+    flex-grow: 1;
+}
+
+.ourpallete-animatable-palleteimage-open {
+    flex-grow: 3;
+}
+/* our pallete mobile section*/
+
+.ourpallete-animatable-imagepallete-mobile {
+    flex-direction: row;
+}
+
+.ourpallete-animatable-imagepallete-animation-mobile {
+    animation-name: ourpallete-imagepallete-animation-mobile;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+}
+
+.ourpallete-animatable-palleteimage-mobile {
+    flex-basis: 1px;
+    flex-shrink: 1;
+
+    transition-property: flex-grow;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.ourpallete-animatable-palleteimage-collapsed-mobile {
+    flex-grow: 1;
+}
+
+.ourpallete-animatable-palleteimage-mobile-open {
+    flex-grow: 3;
+}
+
+/* projects section */
+
+.projects-animatable-overlay {
+    bottom: 0;
+    transition-duration: 0.2s;
+    transition-delay: 0.1s;
+}
+
+.projects-animatable-overlay-open {
+    height: 100%;
+}
+
+.projects-animatable-overlay-collapse {
+    height: 110px!important;
+}
+
+
+.projects-animatable-overlay-reverse {
+    bottom: 0;
+    transition-duration: 0.2s;
+    transition-delay: 0.1s;
+}
+.projects-animatable-overlay-collapse-reverse {
+    height: 110px!important;
+}
+.projects-animatable-overlay-open-reverse {
+    height: 0!important;
+}
+.projects-animatable-overlay-open-reverse-mobile {
+    height: 50%!important;
+}
+
+
+.projects-animatable-overlay-open-mobile {
+    height: 20%;
+}
+.projects-animatable-overlay-open-mobile-30 {
+    height: 30%;
+}
+.projects-animatable-overlay-open-mobile-35 {
+    height: 35%;
+}
+.projects-animatable-overlay-open-mobile-40 {
+    height: 40%;
+}
+
+/* meet the team section*/
+
+@keyframes meettheteam-content-one-animation {
+    from {
+        opacity: 0;
+        transform: translateX(-35%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.meettheteam-animatable-card-one-animation {
+    animation-name: meettheteam-content-one-animation;
+    animation-duration: 0.4s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes meettheteam-content-two-animation {
+    from {
+        opacity: 0;
+        transform: translateX(35%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.meettheteam-animatable-card-two-animation {
+    animation-name: meettheteam-content-two-animation;
+    animation-duration: 0.4s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+    background-color: black;
+}
+
+.meettheteam-card-overlay {
+    bottom: 0;
+    transition-property: height, background-color;
+    transition-duration: 0.2s;
+    transition-delay: 0.1s;
+}
+
+.meettheteam-card-overlay-open {
+    height: 100%;
+    background-color: #db3b86;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.meettheteam-card-overlay-open > h4 {
+    display:none!important;
+}
+
+
+.meettheteam-card-overlay-collapsed {
+    height: 50px!important;
+    background-color: black!important;
+}
+.meettheteam-card-overlay-collapsed > .label-centered {
+    display:none!important;
+}
+
+/* meeting space */
+
+.meetingspace-animatable-circle-animation {
+    animation-name: bounce-in;
+    animation-duration: 0.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+}
+
+/* animation breakpoints */
+@media all and (min-width: 768px) and (max-width: 1365px) {
+    .projects-animatable-overlay-open {
+        height: 110px!important;
+    }
+    .projects-animatable-overlay-open-education-and-mentorship {
+        height: 70px!important;
+    }
+    .projects-animatable-overlay-open-tablet {
+        height: 30%!important;
+    }
+    .projects-animatable-overlay-open-reverse-tablet {
+        height: 110px!important;
+    }
+}
+@media all and (max-width: 767px) {
+    .projects-animatable-overlay-open {
+        height: 130px!important;
+    }
+    .projects-animatable-overlay-open-education-and-mentorship {
+        height: 70px!important;
+    }
+}
