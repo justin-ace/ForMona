@@ -1245,6 +1245,17 @@ small {
         cursor: pointer;
     }
 }
+@media only screen and (min-width: 375px) and (max-width: 766px) {
+    .img_meeting_you{
+        width: 175px!important;
+        height: 175px!important;
+    }
+}
+@media all and (min-width: 375px) and (max-width: 614px) {
+    .show-on-medium-mon{
+        display: none!important;
+    }
+}
 /*
 @media only screen and (max-width: 450px) {
     
