@@ -781,6 +781,23 @@ PalettePlantsSliderDesktop.addEventListener('slid.bs.carousel', function () {
     }
 })
 
+var PalettePlantsSliderDesktop = document.getElementById('WeekThreeCarousel')
+
+PalettePlantsSliderDesktop.addEventListener('slid.bs.carousel', function () {
+    var pList1 = document.getElementById('WeekThreeFirstSlide').classList;
+    var pList2 = document.getElementById('WeekThreeLastSlide').classList;
+    if (pList1.contains('active')) {
+        document.getElementById("WeekThreeCarouselPrev").classList.add("last-page-button");
+        document.getElementById("WeekThreeCarouselNext").classList.remove("last-page-button");
+    }else if(pList2.contains('active')){
+        document.getElementById("WeekThreeCarouselPrev").classList.remove("last-page-button");
+        document.getElementById("WeekThreeCarouselNext").classList.add("last-page-button");
+    }else{
+        document.getElementById("WeekThreeCarouselPrev").classList.remove("last-page-button");
+        document.getElementById("WeekThreeCarouselNext").classList.remove("last-page-button");
+    }
+})
+
 var PalettePlantsSliderDesktop = document.getElementById('palletePlantsCarousel')
 
 PalettePlantsSliderDesktop.addEventListener('slid.bs.carousel', function () {
