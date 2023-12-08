@@ -1,0 +1,116 @@
+body.modal-open{
+    overflow-y: hidden!important;
+}
+.modal-dialog{  
+    /*width: 1288px;*/
+    /*height: 646px;*/
+}
+.whoweare-modal-body{
+    height: 450px!important;
+    overflow-y: auto!important;
+    overflow-x: hidden!important;
+}
+.whoweare-modal-body::-webkit-scrollbar{
+    display: none;
+}
+
+.projects-modal-body{
+    height: 450px!important;
+    overflow-y: auto!important;
+    overflow-x: hidden!important;
+}
+.projects-modal-body::-webkit-scrollbar{
+    display: none;
+}
+
+@media all and (min-width: 1366px) {
+    
+    .modal-content {
+        max-height: calc(100vh - 36px);
+        overflow-y: auto!important;
+        overflow-x: hidden!important;
+    }
+    .modal-xl {
+        max-width: 95%!important;
+    
+            }
+    .whoweare-modal-image{
+        height: 375px!important;
+    }
+    .modal-xl-forms{
+        max-width: 1024px!important;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1365px) {
+    .modal-content {
+        max-height: calc(100vh - 36px);
+        overflow-y: auto!important;
+        overflow-x: hidden!important;
+    }
+    .modal-xl {
+        max-width: 95%!important;
+    
+            }
+}
+
+@media all and (max-width: 767px) {
+    .modal-content {
+        /*max-height: 100%!important;*/
+        overflow-y: auto!important;
+        overflow-x: hidden!important;
+        height: auto !important;
+        min-height: 100% !important;
+        border-radius: 0 !important;
+        padding: 20px!important;
+    }
+    .modal-xl {
+        max-width: 100%!important;
+    
+            }
+    .modal-dialog{
+        margin: 0px!important;
+        top: -1px!important;
+        left: -1px!important;
+    }
+    .modal-footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .row {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    .modal-dialog-scrollable {
+        min-height: 100%!important;
+    }
+    h1,p.contact-us {
+        margin-bottom: 20px!important;
+    }
+    .conferencesModal-image{
+        width: 100%!important;
+    }
+}
+
+/* Modal Paddings */
+#whoWeAreModal{
+    padding-right: 0!important;
+}
+#cutFillModal{
+    padding-right: 0!important;
+}
+#empathyTechModal{
+    padding-right: 0!important;
+}
+#conferencesModal{
+    padding-right: 0!important;
+}
+#mentorshipModal{
+    padding-right: 0!important;
+}
+#accreditedCoursesAndWorkshopModal{
+    padding-right: 0!important;
+}
+
+
