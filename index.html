@@ -13,6 +13,22 @@
 </head>
 <body>
 
+<div class="lock-gate" id="lockGate">
+  <div class="lock-card">
+    <span class="eyebrow">A little secret</span>
+    <h1 class="lock-title">Locked, just for you</h1>
+    <p class="lock-sub">Enter the date only we'd know to unlock your surprise.</p>
+    <div class="code-inputs" id="codeInputs">
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="code-digit" aria-label="Digit 1">
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="code-digit" aria-label="Digit 2">
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="code-digit" aria-label="Digit 3">
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="code-digit" aria-label="Digit 4">
+    </div>
+    <p class="lock-error" id="lockError" aria-live="polite"></p>
+    <button type="button" class="lock-submit" id="lockSubmit">Unlock</button>
+  </div>
+</div>
+
 <div class="heart-field" id="heartField" aria-hidden="true"></div>
 
 <section class="hero">
@@ -149,6 +165,7 @@
 <script src="js/classes/Envelope.js"></script>
 <script src="js/classes/CollageModal.js"></script>
 <script src="js/classes/ScrollReveal.js"></script>
+<script src="js/classes/PasscodeGate.js"></script>
 <script src="js/main.js"></script>
 
 </body>

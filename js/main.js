@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+  new PasscodeGate({
+    gateId: 'lockGate',
+    inputSelector: '.code-digit',
+    errorId: 'lockError',
+    submitId: 'lockSubmit',
+    code: '0115',
+    storageKey: 'gfday-unlocked'
+  }).init();
+
   new FloatingHearts('heartField').init();
 
   new Envelope('envelope', 'envelopeHint').init();
