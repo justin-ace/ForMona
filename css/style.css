@@ -1,5 +1,4 @@
-
-  :root{
+:root{
     --wine-deep:#260e1c;
     --wine-mid:#4a1330;
     --wine-soft:#7a2447;
@@ -59,7 +58,6 @@
     opacity:0.85;
   }
 
-  /* reveal-on-scroll */
   .reveal{
     opacity:0;
     transform: translateY(28px);
@@ -228,6 +226,7 @@
     border-style:solid;
   }
   .envelope-body::before{
+
     left:0; bottom:0;
     border-width:0 0 78px 170px;
     border-color: transparent transparent rgba(0,0,0,0.06) transparent;
@@ -341,14 +340,14 @@
     aspect-ratio: 1 / 1;
     border-radius:1px;
     background-color: var(--wine-soft);
-    background-image: var(--pic);
-    background-size: cover;
-    background-position: center;
     position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     overflow:hidden;
+  }
+  .polaroid .frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
   }
   .polaroid .frame::after{
     content:"";

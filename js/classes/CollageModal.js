@@ -10,7 +10,8 @@ class CollageModal {
   }
 
   open(card) {
-    this.frame.style.setProperty('--pic', card.getAttribute('data-pic'));
+    this.frame.src = card.getAttribute('data-pic');
+    this.frame.alt = card.getAttribute('data-title');
     this.caption.textContent = card.getAttribute('data-title');
     this.message.textContent = card.getAttribute('data-message');
     this.overlay.classList.add('active');
